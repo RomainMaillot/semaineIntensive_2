@@ -1,0 +1,43 @@
+.main__article2{
+    margin-top: 8vh;
+    padding-bottom: 60px;
+    font-size: 1.2rem;
+    background-color: $pink;
+    font-family: $primary-font;
+    h3{
+        position: relative;
+        top:-48px;
+        @media screen and (max-width: $break-small){
+          top: -40px;
+        }
+    }
+    .center{
+        text-align: center;
+    }
+    .item{
+        padding: 0 20px;
+        @media screen and (max-width: $break-small){
+          padding: 0;
+        }
+        img{
+            margin: 20px 0;
+            @media screen and (max-width: $break-small){
+              width: 100%;
+              margin-right: 0;
+            }
+        }
+        .bold{
+            font-weight: 700;
+        }
+        p{
+            margin:0;
+            text-align: center;
+        }
+    }
+    .row{
+      @media screen and (max-width: $break-small){
+        width: 100%;
+        margin: 0;
+      }
+    }
+}

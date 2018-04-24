@@ -1,0 +1,264 @@
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  background: $blue;
+  padding: 10px 190px;
+  @media screen and (max-width: $break-small){
+    padding: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+  a:hover {
+    color: $white;
+  }
+  p {
+    margin: 0 10px;
+  }
+  a, p {
+    font-size: 0.8rem;
+  }
+}
+
+.product {
+  padding: 40px 190px;
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width: $break-medium){
+    flex-direction: column;
+    padding: 0;
+  }
+  h4 {
+    margin: 20px 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  &__image {
+    border: 10px solid $pink;
+    border-radius: 5px;
+    background: $pink;
+    img {
+      width: 300px;
+      @media screen and (max-width: $break-medium){
+        width: 200px;
+      }
+    }
+  }
+  &__container__thumbnail
+  {
+    @media screen and (max-width: $break-medium){
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 20px 0;
+    }
+  }
+  &__thumbnail {
+    border: 7px solid $pink;
+    border-radius: 5px;
+    margin: 0px 5px 5px 0px;
+    width: 20%;
+    @media screen and (max-width: $break-medium){
+      height: 20%;
+    }
+    img {
+      flex-direction: column;
+      width:50px;
+    }
+  }
+  &__desc {
+    margin: 30px;
+    //width: 400px;
+    p {
+      font-size: 0.8rem;
+      margin: 5px 0;
+    }
+    h4
+    {
+      @media screen and (max-width: $break-small){
+        margin-bottom: 0;
+      }
+    }
+    &__buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      @media screen and (max-width: $break-small){
+        font-size: 0.8rem;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+      }
+      input {
+        width: 100px;
+        border-style:none;
+        color: $black;
+        font-weight: bold;
+        font-size: 1.4rem;
+        border-radius: 5px;
+        text-align: center;
+        background: $blue;
+        @media screen and (max-width: $break-small){
+          font-size: 1.2rem;
+          margin: 5px;
+          width: 40%;
+          height: 40px;
+        }
+      }
+      a {
+        font-size: 1.2rem;
+        background: $pink;
+        padding: 15px 30px;
+        color: $black;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      &__add {
+        display: flex;
+        flex-direction: row;
+        @media screen and (max-width: $break-small){
+          flex-direction: column;
+          align-items: center;
+        }
+        a {
+          margin: 0 10px;
+          @media screen and (max-width: $break-small){
+            margin: 5px;
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.opinion {
+  background: $pink;
+  position: relative;
+  padding: 40px 190px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  @media screen and (max-width: $break-medium){
+    justify-content: space-around;
+    padding: 50px;
+  }
+  @media screen and (max-width: $break-small){
+    flex-direction: column;
+    padding: 0;
+  }
+  h4 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  &__others {
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: $break-medium){
+      margin: 10px 15%;
+      width: 40%;
+    }
+    &__title {
+      display: flex;
+      flex-direction: row;
+      @media screen and (max-width: $break-medium){
+        text-align: left;
+      }
+      &__stars {
+        margin-left: 30px;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        img {
+          margin:0 2px;
+          width: 20px; height: 20px;
+        }
+      }
+    }
+    p {
+      font-size: 1rem;
+      width: 400px;
+      @media screen and (max-width: $break-medium){
+        width: 100%;
+      }
+    }
+  }
+  form
+  {
+    @media screen and (max-width: $break-small){
+      margin: 10px auto;
+    }
+    label
+    {
+      display: block;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .champ
+    {
+      border: 1px solid $pink;
+      border-radius: 5px;
+      height: 10%;
+      width: 80%;
+      margin-bottom: 8px;
+      @media screen and (max-width: $break-small){
+        width: 95%;
+        height: 40px;
+      }
+    }
+    textarea
+    {
+      border: 1px solid $pink;
+      border-radius: 5px;
+      height: 30%;
+      width: 120%;
+      resize: none;
+      @media screen and (max-width: $break-small){
+        width: 95%;
+      }
+    }
+    h4
+    {
+      margin-bottom: 4px;
+    }
+    .opinion__you__last
+    {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 120%;
+      margin-top: 8px;
+      @media screen and (max-width: $break-small){
+        width: 80%;
+      }
+      .note
+      {
+        display: flex;
+        flex-direction: column;
+      }
+      .opinion__you__last__stars
+      {
+        display: flex;
+        flex-direction: row;
+        img {
+          margin:0 2px;
+          width: 20px; height: 20px;
+        }
+      }
+    }
+    a
+    {
+      text-decoration: none;
+      color: $black;
+      font-weight: bold;
+      font-size: 1.2rem;
+      background: $blue;
+      padding: 15px 30px;
+      border-radius: 5px;
+    }
+  }
+}

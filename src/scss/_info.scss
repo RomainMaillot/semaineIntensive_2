@@ -1,0 +1,119 @@
+p
+{
+  font-size: 1.2rem;
+  @media screen and (max-width: $break-small){
+    font-size: 0.8rem;
+  }
+}
+.main__info
+{
+  .main__article
+  {
+    &:first-of-type
+    {
+      background: $blue;
+      padding-bottom: 60px;
+      @media screen and (max-width: $break-medium){
+        padding-top: 50px;
+      }
+      .texte
+      {
+        text-align: center;
+        margin: 0 auto;
+        width: 70%;
+        p:nth-child(3)
+        {
+          @media screen and (max-width: $break-medium){
+            display: none;
+          }
+        }
+        a img
+        {
+          width: 50px;
+          @media screen and (max-width: $break-medium){
+            display: none;
+          }
+        }
+        img {
+          width: 200px; height: 200px;
+        }
+      }
+    }
+    &:nth-child(2)
+    {
+      h4
+      {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+      .main__article__pollenni
+      {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 40px 100px;
+        padding-bottom: 60px;
+        @media screen and (max-width: $break-medium){
+          margin: 0;
+        }
+        @media screen and (max-width: $break-small){
+          flex-direction: column;
+        }
+        .texte
+        {
+          align-self: center;
+          width: 40%;
+          @media screen and (max-width: $break-small){
+            width: 80%;
+          }
+        }
+        img
+        {
+          @media screen and (max-width: $break-small){
+            width: 50%;
+            margin: 10px auto;
+          }
+        }
+      }
+    }
+    &:nth-child(3)
+    {
+      background: $pink;
+      padding-bottom: 60px;
+      text-align: center;
+      h3
+      {
+        text-align: left;
+      }
+      p
+      {
+        margin: 0 auto;
+        width: 60%;
+        text-align: left;
+      }
+
+      .sew {
+        width: 300px;
+        margin: 10px auto;
+      }
+    }
+    &:last-of-type
+    {
+      background: $blue;
+      padding-bottom: 60px;
+      >p
+      {
+        margin: 0 auto;
+        width: 70%;
+      }
+    }
+    h3
+    {
+      position: relative;
+      top: -48px;
+      @media screen and (max-width: $break-small){
+        top: -38px;
+      }
+    }
+  }
+}

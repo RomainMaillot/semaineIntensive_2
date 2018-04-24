@@ -1,0 +1,97 @@
+
+.carrousel
+{
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  @media screen and (max-width: $break-medium){
+    z-index: -1;
+    height: 250px;
+  }
+  @media screen and (max-width: $break-small){
+    z-index: -1;
+    height: 125px;
+  }
+  .images
+  {
+    position: relative;
+    .w-100
+    {
+      transition:all 0.8s ease-out;
+    }
+  }
+  h4
+  {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    z-index: 100;
+    font-size: 2.4rem;
+    font-weight: bold;
+    @media screen and (max-width: $break-medium){
+      left: 25%;
+    }
+    @media screen and (max-width: $break-small){
+      font-size: 1.5rem;
+      left: 20%;
+    }
+    &:after
+    {
+      content: "";
+      background-color: $blue;
+      top: 0;
+      left: -5%;
+      width:110%;
+      height:100%;
+      z-index: -1;
+      opacity: 0.8;
+      transform: skewX(-30deg);
+      position: absolute;
+    }
+  }
+  .flechegauche
+  {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 8%;
+    top: 45%;
+    opacity: 0.5;
+    &:hover
+    {
+      opacity: 1;
+    }
+    img
+    {
+      width: 50px;
+      height: 50px;
+      @media screen and (max-width: $break-medium){
+        display: none;
+      }
+    }
+
+  }
+  .flechedroite
+  {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 39%;
+    left: 8%;
+    opacity: 0.5;
+    &:hover
+    {
+      opacity: 1;
+    }
+    img
+    {
+      width: 50px;
+      height: 50px;
+      @media screen and (max-width: $break-medium){
+        display: none;
+      }
+    }
+
+  }
+}
